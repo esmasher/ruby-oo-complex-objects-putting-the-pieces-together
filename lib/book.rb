@@ -1,8 +1,9 @@
 
 
-#attr_accessor :author
-#attr_reader :title
+
 class Book
+  attr_accessor :author, :page_count, :genre, :turn_page
+attr_reader :title, :turn_page
 
   def initialize (title)
     @title = title
@@ -12,33 +13,29 @@ class Book
    @title = "And Then There Were None"
   end
 
-  def author=(author)
-    @author = author
-  end
+  #def author=(author)
+   # @author = author
+ # end
 
   def author
      @author
   end
 
-  def page_count= (page_count)
-    @page_count = page_count
-  end
+ # def page_count= (page_count)
+ #   @page_count = page_count
+  #end
 
   def page_count
     @page_count
   end
 
-  def genre=(genre)
-    @genre = genre
-  end
+ # def genre=(genre)
+ #   @genre = genre
+ # end
 
   def genre
     @genre
   end
-
-  #def turn_page= (turn_page)
-   # @turn_page = turn_page
-  #end
 
   def turn_page
     puts "Flipping the page...wow, you read fast!"
